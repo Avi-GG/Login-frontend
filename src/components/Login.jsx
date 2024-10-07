@@ -16,7 +16,7 @@ const Login = () => {
     
           // Send data to the backend
           try {
-              const response = await fetch(`${import.meta.env.REACT_APP_API_URL}/login`, {
+              const response = await fetch(`${process.env.REACT_APP_API_URL}/login`, {
                   method: 'POST', // Use POST for sending data
                   headers: {
                       'Content-Type': 'application/json', // Specify content type

@@ -17,7 +17,7 @@ const Signup = () => {
 
       // Send data to the backend
       try {
-          const response = await fetch(`${import.meta.env.REACT_APP_API_URL}/Signup`, {
+          const response = await fetch(`${process.env.REACT_APP_API_URL}/Signup`, {
               method: 'POST', // Use POST for sending data
               headers: {
                   'Content-Type': 'application/json', // Specify content type
