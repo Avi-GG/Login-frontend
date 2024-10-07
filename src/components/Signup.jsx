@@ -17,6 +17,8 @@ const Signup = () => {
 
       // Send data to the backend
       try {
+		console.log(process.env.REACT_APP_API_URL);
+		
           const response = await fetch(`${process.env.REACT_APP_API_URL}/Signup`, {
               method: 'POST', // Use POST for sending data
               headers: {
